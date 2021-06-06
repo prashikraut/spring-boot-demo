@@ -21,7 +21,7 @@ public class PersonService {
      this is dependency injection
      try using postgresDao and fakePersonDao in qualifiers */
     @Autowired
-    public PersonService(@Qualifier("postgresDao") PersonDao personDao){
+    public PersonService(@Qualifier("fakePersonDao") PersonDao personDao){
         this.personDao = personDao;
     }
 
